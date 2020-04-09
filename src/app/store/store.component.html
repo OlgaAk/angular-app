@@ -22,8 +22,9 @@
         </h4>
         <div class="card-text bg-white p-1">
           {{product.description}}
-        </div>
 
+          <button class="btn btn-success btn-sm float-right" (click)="addProductToCart(product)">Add to Cart</button>
+        </div>
       </div>
       <div class="form-inline float-left m-1">
         <select class="form-control" [value]="productsPerPage" (change)="changePageSize($event.target.value)">
