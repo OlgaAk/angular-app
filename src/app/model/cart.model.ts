@@ -17,12 +17,13 @@ export class Cart {
     updateQuantity(product: Product, quantity: number) {
         let line = this.lines.find(l => l.product.id == product.id)
         if (line != undefined) {
-            line.quantity == Number(quantity)
+            line.quantity = Number(quantity)
         }
         this.recalculate()
     }
     removeLine(id: number) {
-        this.lines.filter(l => l.product.id != id) // ? my solution maybe not working
+        this.lines = this.lines.filter(l => l.product.id != id) // ? my solution 
+        this.recalculate()
     }
     clear() {
         this.cartPrice = 0
