@@ -5,7 +5,7 @@ import { Cart } from "./cart.model"
 export class Order {
     public id: number;
     public name: string;
-    public adress: string;
+    public address: string;
     public city: string;
     public state: string;
     public zip: string;
