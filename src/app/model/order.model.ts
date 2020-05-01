@@ -15,7 +15,7 @@ export class Order {
     clear() {
         this.id = null;
         this.name = null;
-        this.adress = null;
+        this.address = null;
         this.city = null;
         this.state = null;
         this.zip = null;

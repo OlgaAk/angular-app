@@ -14,6 +14,7 @@ module.exports = function () {
         description: "A fun game 2",
         price: 45
       }
-    ]
+    ],
+    orders: []
   }
 }

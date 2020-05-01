@@ -41,4 +41,5 @@ export class StoreComponent {
         this.cart.addLine(product)
         this.router.navigateByUrl("/cart")
     }
+
 }
