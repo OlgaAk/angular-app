@@ -5,7 +5,7 @@
   {{errorMessage}}
 </div>
 <div class="p-2">
-  <form novalidate #form="ngForm" (ngSubmit)="authenticate(form)">
+  <form novalidate #form="ngForm" >
     <div class="form-group">
       <label>Name</label>
       <input type="text" name="username" [(ngModel)]="username" class="form-control" required>
@@ -16,7 +16,7 @@
     </div>
     <div class="text-center">
       <button class="btn btn-secondary m-1" routerLink="/">Go Back</button>
-      <button class="btn btn-primary m-1" type="submit">Log In</button>
+      <button class="btn btn-primary m-1" type="button" (click)="authenticate(form)">Log In</button>
     </div>
   </form>
 </div>
