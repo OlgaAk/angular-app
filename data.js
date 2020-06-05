@@ -13,6 +13,13 @@ module.exports = function () {
         category: "Chess",
         description: "A fun game 2",
         price: 45
+      },
+      {
+        id: 3,
+        name: "Tennis Rocket",
+        category: "Tennis",
+        description: "Tennis",
+        price: 100
       }
     ],
     orders: []
